@@ -2,12 +2,13 @@
 //error_reporting(E_STRICT);
 declare(strict_types=1);
 
-$something = 'Requested URL';
+//echo 'Requested URL = "' . $_SERVER['QUERY_STRING'] . '"';
 
-$num = 1;
+/**
+ * Routing
+ */
+require '../Core/Router.php';
 
-doing($something);
+$router = new Router();
 
-function doing(string $thing){
-    echo $thing . ' = "' . $_SERVER['QUERY_STRING'] . '"';
-}
+echo get_class($router);
