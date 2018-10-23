@@ -2,7 +2,8 @@
 //error_reporting(E_STRICT);
 declare(strict_types=1);
 
-//echo 'Requested URL = "' . $_SERVER['QUERY_STRING'] . '"';
+// Require the controller class
+require '../App/Controllers/Posts.php';
 
 /**
  * Routing
@@ -11,16 +12,12 @@ require '../Core/Router.php';
 
 $router = new Router();
 
-//echo get_class($router);
-
 // Add the routes
 $router->add('', ['controller' => 'Home', 'action' => 'index']);
-$router->add('posts', ['controller' => 'Posts', 'action' => 'index']);
-//$router->add('posts/new', ['controller' => 'Posts', 'action' => 'new']);
 $router->add('{controller}/{action}');
-$router->add('admin/{action}/{controller}');
+$router->add('{controller}/{id:\d+}/{action}');
 
-
+/*
 // Display the routing table
 echo '<pre>';
 //var_dump($router->getRoutes());
@@ -37,3 +34,6 @@ if($router->match($url)){
 }else{
     echo "No route found for URL '$url'";
 }
+*/
+
+$router->dispatch($_SERVER['QUERY_STRING']);
