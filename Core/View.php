@@ -26,4 +26,28 @@ class View
             echo "$file not found";
         }
     }
+
+    /**
+     * Render a view template using Twig
+     *
+     * @param string $template
+     * @param array $args
+     *
+     * @return void
+     *
+     * @throws \Twig_Error_Loader
+     * @throws \Twig_Error_Runtime
+     * @throws \Twig_Error_Syntax
+     */
+    public static function renderTemplate(string $template, array $args = []): void
+    {
+        static $twig = null;
+
+        if($twig === null){
+            $loader = new \Twig_Loader_Filesystem('../App/Views');
+            $twig = new \Twig_Environment($loader);
+        }
+
+        echo $twig->render($template, $args);
+    }
 }

@@ -32,12 +32,20 @@ class Home extends \Core\Controller
 
     /**
      * Show the index page
-     * 
+     *
      * @return void
+     *
+     * @throws \Twig_Error_Loader
+     * @throws \Twig_Error_Runtime
+     * @throws \Twig_Error_Syntax
      */
     public function indexAction(): void
     {
-        View::render('Home/index.php', [
+//        View::render('Home/index.php', [
+//            'name'      =>  'Dave',
+//            'colors'    =>  ['red', 'green', 'blue']
+//        ]);
+        View::renderTemplate('Home/index.html', [
             'name'      =>  'Dave',
             'colors'    =>  ['red', 'green', 'blue']
         ]);
