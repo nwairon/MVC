@@ -4,6 +4,7 @@ declare(strict_types=1);
 namespace App\Controllers;
 
 use Core\View;
+use App\Models\Post;
 
 /**
  * Posts controller
@@ -22,12 +23,10 @@ class Posts extends \Core\Controller
      */
 	public function indexAction(): void
 	{
-//		echo 'Hello from the index action in the Posts controller!';
-//		echo '<p>Query string parameters: <pre>' .
-//            htmlspecialchars(print_r($_GET, true)) . '</pre></p>';
+        $posts = Post::getAll();
+
         View::renderTemplate('Posts/index.html.twig', [
-            'name'      =>  'Dave',
-            'colors'    =>  ['red', 'green', 'blue']
+            'posts' => $posts
         ]);
 	}
 	
