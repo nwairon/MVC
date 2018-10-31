@@ -11,12 +11,15 @@ use Core\View;
 
 class Posts extends \Core\Controller
 {
-	
-	/**
-	 * Show the index page
-	 *
-	 * @return void
-	 */
+
+    /**
+     * Show the index page
+     *
+     * @return void
+     * @throws \Twig_Error_Loader
+     * @throws \Twig_Error_Runtime
+     * @throws \Twig_Error_Syntax
+     */
 	public function indexAction(): void
 	{
 //		echo 'Hello from the index action in the Posts controller!';
