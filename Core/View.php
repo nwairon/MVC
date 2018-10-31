@@ -13,6 +13,7 @@ class View
      * @param array $args
      *
      * @return void
+     * @throws \Exception
      */
     public static function render(string $view, array $args = []): void
     {
@@ -23,7 +24,7 @@ class View
         if(is_readable($file)){
             require $file;
         }else{
-            echo "$file not found";
+            throw new \Exception("$file not found");
         }
     }
 

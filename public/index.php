@@ -8,22 +8,14 @@ declare(strict_types=1);
 require_once dirname(__DIR__) . '/vendor/autoload.php';
 
 /**
- * Autoloader
+ * Error and Exception handling
  */
-//spl_autoload_register(function ($class){
-//    $root = dirname(__DIR__);   // get parent directory
-//    $file = $root . '/' . str_replace('\\', '/', $class) . '.php';
-//    if(is_readable($file)){
-////        require $root . '/' . str_replace('\\', '/', $class) . '.php';
-//        require $file;
-//    }
-//});
+set_error_handler('Core\Error::errorHandler');
+set_exception_handler('Core\Error::exceptionHandler');
 
 /**
  * Routing
  */
-//require '../Core/Router.php';
-
 $router = new Core\Router();
 
 // Add the routes
