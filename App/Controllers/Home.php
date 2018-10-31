@@ -45,7 +45,7 @@ class Home extends \Core\Controller
 //            'name'      =>  'Dave',
 //            'colors'    =>  ['red', 'green', 'blue']
 //        ]);
-        View::renderTemplate('Home/index.html', [
+        View::renderTemplate('Home/index.html.twig', [
             'name'      =>  'Dave',
             'colors'    =>  ['red', 'green', 'blue']
         ]);

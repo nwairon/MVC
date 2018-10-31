@@ -5,7 +5,6 @@ declare(strict_types=1);
 /**
  * Twig
  */
-//require_once dirname(__DIR__) . '/vendor/autoloader.php';
 require_once dirname(__DIR__) . '/vendor/autoload.php';
 
 /**
