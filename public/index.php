@@ -6,7 +6,7 @@ declare(strict_types=1);
  * Twig
  */
 //require_once dirname(__DIR__) . '/vendor/autoloader.php';
-Twig_Autoloader::register();
+require_once dirname(__DIR__) . '/vendor/autoload.php';
 
 /**
  * Autoloader
