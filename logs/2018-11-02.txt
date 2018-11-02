@@ -1,0 +1,32 @@
+[02-Nov-2018 06:31:55 UTC] Uncaught exception: 'Exception' with message 'Controller class App\Controllers\Something not found'
+Stack trace: #0 /Applications/MAMP/htdocs/MVC/public/index.php(28): Core\Router->dispatch('something/actio...')
+#1 {main}
+Thrown in '/Applications/MAMP/htdocs/MVC/Core/Router.php' on line 113
+[02-Nov-2018 06:32:04 UTC] Uncaught exception: 'Exception' with message 'Controller class App\Controllers\Something not found'
+Stack trace: #0 /Applications/MAMP/htdocs/MVC/public/index.php(28): Core\Router->dispatch('something/actio...')
+#1 {main}
+Thrown in '/Applications/MAMP/htdocs/MVC/Core/Router.php' on line 113
+[02-Nov-2018 06:56:51 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /Applications/MAMP/htdocs/MVC/public/index.php(28): Core\Router->dispatch('something')
+#1 {main}
+Thrown in '/Applications/MAMP/htdocs/MVC/Core/Router.php' on line 116
+[02-Nov-2018 06:56:56 UTC] Uncaught exception: 'Exception' with message 'Controller class App\Controllers\Something not found'
+Stack trace: #0 /Applications/MAMP/htdocs/MVC/public/index.php(28): Core\Router->dispatch('something/else')
+#1 {main}
+Thrown in '/Applications/MAMP/htdocs/MVC/Core/Router.php' on line 113
+[02-Nov-2018 07:05:09 UTC] Uncaught exception: 'Exception' with message 'Controller class App\Controllers\Something not found'
+Stack trace: #0 /Applications/MAMP/htdocs/MVC/public/index.php(28): Core\Router->dispatch('something/else')
+#1 {main}
+Thrown in '/Applications/MAMP/htdocs/MVC/Core/Router.php' on line 113
+[02-Nov-2018 07:05:27 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /Applications/MAMP/htdocs/MVC/public/index.php(28): Core\Router->dispatch('something')
+#1 {main}
+Thrown in '/Applications/MAMP/htdocs/MVC/Core/Router.php' on line 116
+[02-Nov-2018 07:05:43 UTC] Uncaught exception: 'Exception' with message 'Controller class App\Controllers\Something not found'
+Stack trace: #0 /Applications/MAMP/htdocs/MVC/public/index.php(28): Core\Router->dispatch('something/else')
+#1 {main}
+Thrown in '/Applications/MAMP/htdocs/MVC/Core/Router.php' on line 113
+[02-Nov-2018 07:08:08 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /Applications/MAMP/htdocs/MVC/public/index.php(28): Core\Router->dispatch('something')
+#1 {main}
+Thrown in '/Applications/MAMP/htdocs/MVC/Core/Router.php' on line 116
